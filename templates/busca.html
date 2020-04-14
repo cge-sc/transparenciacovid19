@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block conteudo %}
+        <!-- CONTEUDOS -->
+        <div>&nbsp;</div>
+        <div id="conteudo">
+            <div ui-view="main" style="">
+                <div class="loading-block">
+                    <section id="busca">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="conteudo-header">
+                                        <h2 class="conteudo-titulo">
+                                            Pesquisar
+                                        </h2>
+                                    </div>
+                                </div>
+                                  <div class="col-xs-12 col-lg-8 col-md-10 col-sm-11">
+                                    <div class="busca-barra">
+                                        <input tr-auto-focus="" name="solrquery" type="text" class="busca-barra-input" placeholder="Digite aqui o que deseja procurar." style="height:48px;line-height:48px;padding-left:10px;width:100%;display:block">
+                                        <button class="busca-barra-botao" style="height:100%;top:0;right:0;position:absolute;background:#12844c;color:#fff;font-weight:500;padding:0 22px"><span class="icon">a</span> <span class="hidden-xs">PROCURAR</span> </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="busca-barra-info" style="padding-left:5px; margin:20px 0 30px 10px">
+                                            Utilize o campo de busca acima para encontrar o que procura.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>        
+{% endblock %}

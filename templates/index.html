@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+        <div>&nbsp;</div>
+        <!-- CONTEUDO  -->  
+        <div id="conteudo">            
+            <div>&nbsp;</div>
+            <!-- CARDS -->
+            <!-- ESPERAR TER DUAS CONSULTAS NO PORTAL DA TRANSPARENCIA-->    
+            <section id="home">
+            <!--    <div class="despesas">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="card principal">
+                                    <div class="texto">                                
+                                        Despesas com a <b>COVID-19</b><br/>
+                                        no governo de<br/>
+                                        <b>Santa Catarina</b> em <b>2020</b>
+                                        <div class="select">
+                                            <div class="botao" selected=2020><span class="seta"></span></div>
+                                            <ul class="lista">
+                                                <li>2020</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+  
+                        <!-- RECEITAS - COVID-19 **** ALTERAR PARA NOVA CONSULTA ***** -->
+                        <!--<div class="col-xs-12 col-sm-6 col-md-4">
+                            <a href="http://www.transparencia.sc.gov.br/receita" target="_blank">
+                                <div class="card receitas">
+                                    <div class="texto">
+                                        <h3 class="titulo">Receitas</h3>
+                                        <div class="valor">R$ 10.071.317.050,10</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>-->
+
+                        <!-- DESPESAS COVID-19 **** ALTERAR PARA NOVA CONSULTA ***** -->
+                        <!--<div class="col-xs-12 col-sm-6 col-md-4">
+                            <a href="http://www.transparencia.sc.gov.br/despesa" target="_blank" >
+                                <div class="card despesas">
+                                    <div class="texto">
+                                        <h3 class="titulo">Despesas</h3>
+                                        <div class="valor">R$ 6.746.036.330,64</div>
+                                    </div>
+                                </div>
+                            </a>    
+                        </div>
+                    </div>
+                </div>       
+
+                <div>&nbsp;</div> -->
+
+                <!--DOACOES-->    
+                <div class="container">
+                    <div class="row section-mapa">
+                        <div class="col-xs-12 col-banner-home">
+                            <a id="linkMapaObras" href="http://www.sef.sc.gov.br/servicos/servico/132" target="_blank" rel="external" title="DOAÇÕES">
+                                <img src="{{ url_for('static', filename='img/banners/aff/BANNER-DOE-2000x600.png') }}" class="img-responsive" alt="DOAÇÕES" longdesc="DOAÇÕES - Doação para enfrentamento ao coronavírus em SC">
+                           </a>
+                        </div>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+
+                <!--MEDIDAS ECONOMICAS-->    
+                <div class="container">
+                    <div class="row section-mapa">
+                        <div class="col-xs-12 col-banner-home">
+                            <a id="linkMapaObras" href="http://especial.sc.gov.br/medidaseconomicas/" target="_blank" rel="external" title="MEDIDAS ECONÔMICAS">
+                                <img src="{{ url_for('static', filename='img/banners/aff/BANNER-COVIDxx.jpg') }}" class="img-responsive" alt="MEDIDAS ECONÔMICAS" longdesc="MEDIDAS ECONÔMICAS - Respostas aos impactos da crise COVID-19">
+                           </a>
+                        </div>
+                    </div>
+                </div>   
+                <div>&nbsp;</div>    
+            </section>
+        </div>
+{% endblock %}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>COVID-19 - Transparência sobre Covid-19 do Governo de Santa Catarina</title>
+    <meta name="description" content="A página Transparência sobre Covid-19 do Governo de Santa Catarina é um instrumento de controle social que possibilita ao cidadão acompanhar a arrecadação das receitas e a aplicação dos recursos públicos utilizado no enfretamento da Pandemia de Covid-19.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon/favicon.ico') }}">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="{{ url_for('static', filename='img/favicon/favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="196x196" href="{{ url_for('static', filename='img/favicon/favicon-192.png') }}">
+    <link rel="icon" type="image/png" sizes="160x160" href="{{ url_for('static', filename='img/favicon/favicon-160.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='img/favicon/favicon-96.png') }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ url_for('static', filename='img/favicon/favicon-64.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon/favicon-32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon/favicon-16.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon/favicon-57.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/favicon/favicon-114.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/favicon/favicon-72.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='img/favicon/favicon-144.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='img/favicon/favicon-60.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='img/favicon/favicon-120.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='img/favicon/favicon-76.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='img/favicon/favicon-152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/favicon/favicon-180.png') }}">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='img/favicon/favicon-144.png') }}">
+    <meta name="msapplication-config" content="{{ url_for('static', filename='img/favicon/browserconfig.xml') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+        <!--HEADER/MENU-->    
+        <header id="header">
+            <div class="container">
+                <div class="row">                    
+                    <div class="header-bloco-logo col-xs-12">
+                        <div class="row">
+                            <div class="bloco-mobile-botao col-xs-2 visible-xs" onclick="mostraMenu()">
+                                <div class="mobile-botao">
+                                    <div class="barra barra1"></div>
+                                    <div class="barra barra2"></div>
+                                    <div class="barra barra3"></div>
+                                    <div class="barra barra4"></div>
+                                    <span class="mobile-fechar">X</span>
+                                </div>
+                            </div>
+
+                            <div class="bloco-logo col-xs-8 col-sm-4">
+                                <a href="/" class="logo-link" title="Transparência sobre Covid-19 do Governo de Santa Catarina"></a>
+                            </div>
+
+                            <div class="bloco-mobile-busca col-xs-2 visible-xs">
+                                <a href="busca" class="busca-botao"></a>
+                            </div>
+
+                            <div class="bloco-desktop-links col-sm-8 hidden-xs">
+
+                                <div class="bloco-acessibilidade">
+                                    Acessibilidade:
+                                    <a href="" class="link link-diminui" accesskey="2"></a>
+                                    <a href="" class="link link-aumenta" accesskey="3"></a>
+                                    <a href="" class="link link-inicial"></a>
+                                    <a href="" class="link link-contraste" accesskey="4"></a>
+                                </div>
+                                
+                                <nav class="bloco-nav-links">
+                                    <ul>  
+                                        <li><a href="http://dados.sc.gov.br/dataset/instrumentos-legais-para-enfrentamento-ao-coronavirus-covid-19" target="_blank" class="link">Legislação</a></li>
+                                        <!--<li><a href="http://www.transparencia.sc.gov.br/glossario" target="_blank" class="link">Glossário</a></li>
+                                        <li><a href="http://www.transparencia.sc.gov.br/faq" target="_blank" class="link">Perguntas Frequentes</a></li>-->
+                                        <li><a href="http://www.transparencia.sc.gov.br/fale-conosco" target="_blank" class="link">Fale Conosco</a></li>
+                                    </ul>    
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <nav class="bloco-nav-menu">
+                        <ul>
+                            <li class="logo">
+                                <a href="/" class="logo-link" title="Portal da Transparência do Poder Executivo de Santa Catarina">&nbsp</a>
+                            </li>
+                            <li>
+                                <a href="/sobre" class="botao botao-1"><span><img src="{{ url_for('static', filename='img/assets/sobre.png') }}" alt="" style="width:30px;height:30px;padding:3px;"></span>&nbsp;&nbsp;<span class="texto">Sobre</span></a>
+                            </li>
+                            <li>
+                                <a href="/consultas" class="botao botao-2"><img src="{{ url_for('static', filename='img/assets/servers.png') }}" alt="" style="width:30px;height:30px;padding:3px;"><span class="texto">Consultas e Dados Abertos</span></a>
+                            </li>
+                            <li>
+                                <a href="/paineis" class="botao botao-3"><img src="{{ url_for('static', filename='img/assets/report.png') }}" alt="" style="width:30px;height:30px;padding:3px;"><span class="texto">Painéis e Gráficos</span></a>
+                            </li>
+                            <li>
+                                <a href="/saibamais" class="botao botao-4"><img src="{{ url_for('static', filename='img/assets/virus(3).png') }}" alt="" style="width:30px;height:30px;padding:3px;"><span class="texto">Saiba mais sobre a Covid-19</span></a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="/busca" class="botao botao-5" accesskey="7"><span class="ico hidden-sm hidden-md"></span><span class="texto">Pesquisar</span><span class="abrir visible-xs"></span><span class="fechar visible-xs">X</span></a>
+                                <div class="botao botao-6">
+                                    <a href="" class="link link-diminui"></a>
+                                    <a href="" class="link link-aumenta"></a><br/>
+                                    <a href="" class="link link-inicial"></a>
+                                    <a href="" class="link link-contraste"></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="busca">
+                            <div class="busca-form">
+                                <form>
+                                    <input type="text" name="busca" class="busca-input js-nao-fechar" placeholder="DIGITE O QUE VOCÊ PROCURA">
+                                    <button class="busca-envia"><span class="ico"></span></button>
+                                </form>
+                            </div>
+                            <a href="http://www.transparencia.sc.gov.br/pesquisar" class="botao-fechar">x</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        {% block conteudo %}{% endblock %}
+
+        <!--FOOTER-->    
+        <footer id="footer">
+            <!--INFO-->    
+            <div class="info">
+                <div class="container">
+                    <div class="row">
+                        <div class="governo col-xs-12 col-md-2 col-lg-2">
+                            <div class="dev">
+                                <a href="http://sc.gov.br" target="_blank" ><img src="{{ url_for('static', filename='img/assets/home/logo-sc-branco.png') }}" alt="Site do Governo" style="height: 70px; padding-top: 6px; position: center"></a>
+                            </div>
+                        </div> <!--GOVERNO LOGO-->
+                        <div class="col-md-6 col-lg-7">
+                            <div class="row">
+                                <div class="texto col-xs-12 col-sm-6">
+                                    Controladoria-Geral do Estado - CGE<br/>
+                                    Ouvidoria-Geral do Estado - OGE<br/>
+                                    Gerência de Transparência e Dados Abertos - GEDAD
+                                </div> <!--ORGAO-->
+                                <div class="endereco col-xs-12 col-sm-6">
+                                    <div>
+                                        Rod. SC 401, Km 05, nº4600 - Bloco 5<br/>
+                                        Saco Grande II, Florianópolis - SC<br/>
+                                        CEP 88032-000
+                                    </div> 
+                                </div> <!--ENDEREÇO-->
+                            </div> <!--ROW-->
+                        </div> <!--ORGAO-->
+                        <div class="contato col-xs-12 col-md-4 col-lg-3">
+                            <div class="fone">
+                                <a href="tel:55-48-3665-2710" class="link"><span class="ico"></span>(48) 3665-2710</a>
+                            </div> <!--FONE-->
+                            <div class="email">
+                                <a href="mailto:transparencia@cge.sc.gov.br" class="link"><span class="ico"></span>transparencia@cge.sc.gov.br</a>
+                            </div> <!--EMAIL-->
+                            <div class="row">
+                                <!--<div class="social col-xs-6 col-sm-5 col-lg-4">
+                                    <a href="https://twitter.com/SCTransparencia" class="link twitter" target="_blank" target="twitter"><span class="ico"></span>Twitter</a>
+                                </div> -->  <!--SOCIAL TWITTER-->
+                                <div class="social col-xs-6 col-sm-6">
+                                    <a href="https://www.facebook.com/transparenicaSC" class="link facebook" target="_blank" title="facebook"><span class="ico"></span>Facebook</a>
+                                </div> <!--SOCIAL FACEBOOK-->
+                            </div> <!--ROW-->
+                        </div> <!--CONTATOS-->
+                    </div> <!--ROW-->
+                </div> <!--CONTAINER-->
+            </div> <!--INFO-->
+
+            <!--COPYRIGHT-->    
+            <div class="copyright">
+                <div class="container" height="200px">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-lg-1">
+                            <div class="cc">
+                                <img src="{{ url_for('static', filename='/img/assets/owner-16px.png') }}" height="16px" width="16px" alt="Copyleft">
+                                <!--<img src="img/assets/github.png" height="16px" width="16px" alt="Copyleft">-->
+                                <a href="https://github.com/cge-sc" target="_blank" ><img src="{{ url_for('static', filename='img/assets/github.png') }}" height="16px" width="16px" alt="Copyleft"></a>
+                            </div>
+                        </div>
+                        <div class="texto col-xs-12 col-sm-7 col-lg-9">
+                            2020 - Transparência Covid-19 - 
+                            <a href="http://cge.sc.gov.br" target="_blank" >Controladoria-Geral do Estado</a>
+                        </div>
+                        <div class="por col-xs-12 col-sm-3 col-lg-2">
+                            <div class="dev">
+                                <a href="http://cge.sc.gov.br" target="_blank" ><img src="{{ url_for('static', filename='/img/assets/CGE_BRANCA.svg') }}" alt="Site da CGE" class="cc"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Custom JS -->
+        <!-- Javascript para ocultar ou exibir os itens do menu quando em telas pequenas -->
+        <script type="application/javascript">
+            function mostraMenu() {
+                var x = document.getElementsByClassName("bloco-mobile-botao");
+                x[0].classList.toggle("aberto");
+                var y = document.getElementsByClassName("bloco-nav-menu");
+                y[0].classList.toggle("aberto");
+            }
+            function expandeBlocoC() {
+                var zc = document.getElementsByName("consultas");
+                zc[0].classList.toggle("fechado");
+            }
+            function expandeBlocoD() {
+                var zd = document.getElementsByName("dadosabertos");
+                zd[0].classList.toggle("fechado");
+            }
+            function expandeBlocoP() {
+                var zp = document.getElementsByName("paineis");
+                zp[0].classList.toggle("fechado");
+            }
+            function expandeBlocoG() {
+                var zg = document.getElementsByName("graficos");
+                zg[0].classList.toggle("fechado");
+            }
+            function expandeBlocoNE() {
+                var zne = document.getElementsByName("nivelestadual");
+                zne[0].classList.toggle("fechado");
+            }
+            function expandeBlocoNF() {
+                var znf = document.getElementsByName("nivelfederal");
+                znf[0].classList.toggle("fechado");
+            }
+        </script>
+    </body>
+</html>

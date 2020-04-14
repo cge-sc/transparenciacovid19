@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block conteudo %}                
+        <!-- CONTEUDOS -->
+        <div>&nbsp;</div>
+        <div id="conteudo">
+            <div ui-view="main" style="">
+                <div class="loading-block">
+                    <section id="balanco" class="despesa">
+                        <div class="container balanco-graficos">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="conteudo-header">
+                                        <h2 class="conteudo-titulo">
+                                            Consultas e Dados Abertos
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9">
+      				                <div class="conteudo-texto">
+  					                    <span>
+                                            Essa página agrupa as consultas detalhadas sobre os recursos utilizados no enfrentamento do novo coronavírus (Sars-CoV-2) como a execução da despesa, contratos firmados, entre outras. Além disso, disponibiliza link de acesso ao grupo temático para dados abertos relacionados à pandemia de Covid-19.
+                                          </span>
+  				                    </div>
+  			                    </div>
+                            </div>
+                        </div>
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="consultas" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoC()">Consultas</a>
+                                            </h3>
+                                            <ul>
+                                                <!--<li>
+                                                    Consulta no Portal da Transparência sobre receitas Covid-19 (em construção) 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://www.transparencia.sc.gov.br/receita" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>-->
+                                                <li>
+                                                    Consulta no Portal da Transparência sobre despesas Covid-19 (em homologação)
+                                                    <div class="orcamento-links">
+                                                        <!--<a target="_blank" href="http://www.transparencia.sc.gov.br/despesa" class="link-padrao"><span class="icon">p</span></a>-->
+                                                        <a target="_blank" href="http://transparencia-hom.intranet.ciasc.gov.br/despesa/2020/indicador/3779" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Consulta no Portal da Transparência sobre notas de empenho Covid-19 (em homologação)
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://transparencia-hom.intranet.ciasc.gov.br/documentos?visao=empenho&covid19filtro=0&anofiltro=2020&indicador=0&tipoexecucaofiltro=0&mesini=01&anoini=2020&mesfim=12&anofim=2020" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- FIM CONSULTAS -->
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="dadosabertos" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoD()">Dados Abertos</a>
+                                            </h3>
+                                            <ul>
+                                                <!--<li>
+                                                    Conjunto de dados sobre contratos Covid-19
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://dados.sc.gov.br/group/covid-19" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Conjunto de dados sobre demandas de Ouvidoria Covid-19
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://dados.sc.gov.br/group/covid-19" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>-->
+                                                <li>
+                                                    Grupo temático sobre Covid-19 no Portal de Dados Abertos de Santa Catarina
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://dados.sc.gov.br/group/covid-19" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <!--<li>
+                                                    Auditasus - Dados do SIHSUS, CNES e IBGE
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://auditasus.com.br/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>-->
+                                                <li>
+                                                    Conjunto de dados com notificações de Covid-19 no Portal de Dados Aberto do Governo Federal
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://www.dados.gov.br/dataset/notificacao_covid" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                
+                                                <!--<li>
+                                                    Brasil.io - Conjunto de dados de casos de Covid-19 por municípios brasileiros
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://brasil.io/dataset/covid19/caso" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- DADOS ABERTOS -->
+                    </section>
+                </div>
+            </div>
+        </div>
+{% endblock %}

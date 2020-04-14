@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block conteudo %}
+        <!-- CONTEUDOS -->    
+        <div>&nbsp;</div>
+        <div id="conteudo">
+            <div ui-view="main" style="">
+                <div class="loading-block ">
+                    <section id="gestao">
+                        <div class="container balanco-graficos">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="conteudo-header">
+                                        <h2 class="conteudo-titulo">
+                                            Saiba mais sobre a Covid-19
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9">
+      				                <div class="conteudo-texto">
+  					                    <span>
+                                            Informação é a melhor arma contra a pandemia de Covid-19. Por isso agrupamos neste espaço informações para agregar conhecimento sobre a crise. Esta página apresenta os canais oficiais do Governo do Estado relacionados ao enfrentamento do novo coronavírus (Sars-CoV-2), bem como outros links e iniciativas para que, juntos, possamos vencer esse período de calamidade.    
+                                        </span>
+  				                    </div>
+  			                    </div>
+                            </div>
+                        </div>
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="nivelestadual" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoNE()">Nível Estadual</a>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    Site oficial do estado de Santa Catarina sobre a Covid-19 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://www.coronavirus.sc.gov.br/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Site da Secretaria de Estado da Saúde de Santa Catarina
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://www.saude.sc.gov.br/coronavirus/index.html" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- ESTADO -->
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="nivelfederal" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoNF()">Nível Federal</a>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    Site oficial do Ministério da Saúde sobre a Covid-19
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://coronavirus.saude.gov.br/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Site oficial do Ministério da Saúde 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://saude.gov.br/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- FEDERAL -->                        
+                    </section>
+                </div>
+            </div>
+        </div>
+{% endblock %}

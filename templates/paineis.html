@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block conteudo %}      
+        <!-- CONTEUDOS -->
+        <div>&nbsp;</div>
+        <div id="conteudo">
+            <div ui-view="main" style="">
+                <div class="loading-block">
+                    <section id="responsabilidade">
+                        <div class="container balanco-graficos">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="conteudo-header">
+                                        <h2 class="conteudo-titulo ">
+                                            Painéis e Gráficos
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9">
+      				                <div class="conteudo-texto">
+  					                    <span>
+                                            Os painéis são uma forma de visualização de dados que permite um melhor entendimento por parte dos cidadãos. Por meio de elementos interativos como gráficos e filtros, busca-se apresentar uma visão geral e pormenorizada dos dados a fim de facilitar a comunicação e permitir uma análise mais aprofundada da situação em relação ao enfrentamento da COVID-19.
+                                            </br></br>
+                                            Além disso, seguindo os princípios de governo aberto, a CGE incentivará a colaboração e a co-produção entre Governo e Sociedade fomentando a geração de novas análises e painéis com temas relacionados à pandemia baseado em dados oficiais.
+                                        </span>
+  				                    </div>
+  			                    </div>
+                            </div>
+                        </div>
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="paineis" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoP()">Painéis</a>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    Painel Covid-19 do Governo de Santa Catarina
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://www.sc.gov.br/noticias/fotos/setoriais/apresentacao-de-plataforma-48863" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Manifestações de Ouvidoria sobre Covid-19 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://172.19.200.22:3000/public/dashboard/843fd7d1-2080-4416-b3e0-0e635f710fba" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Monitor Covid-19 da Udesc
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://covid.monitor.udesc.br/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Painel Covid-19 do Ministério da Saúde 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://covid.saude.gov.br/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <!--<li>
+                                                    Painel Covid-19 da Josh Hopkins University 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://coronavirus.jhu.edu/map.html" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>--> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="graficos" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoG()">Gráficos</a>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    Boletins de acompanhamento da evolução do Coronavírus em Santa Catarina 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://www.coronavirus.sc.gov.br/boletins/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </section>
+                </div>
+            </div>
+        </div>   
+{% endblock %} 
