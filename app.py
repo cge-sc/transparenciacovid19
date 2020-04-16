@@ -26,5 +26,9 @@ def saibamais():
 def busca():
     return render_template('busca.html')
 
+@app.route('/ouvidoria')
+def ouvidoria():
+    return render_template('ouvidoria.html')
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5000)
