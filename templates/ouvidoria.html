@@ -1,17 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ouvidoria</title>
-</head>
-<body>
-    <iframe
-    src="http://172.19.200.22:3000/public/dashboard/843fd7d1-2080-4416-b3e0-0e635f710fba"
-    frameborder="0"
-    width="1280"
-    height="1600"
-    allowtransparency
-></iframe>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block conteudo %}      
+        <!-- CONTEUDOS -->
+        <div>&nbsp;</div>
+        <div id="conteudo">
+            <div ui-view="main" style="">
+                <div class="loading-block">
+                    <section id="responsabilidade">
+                        <div class="container balanco-graficos">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="conteudo-header">
+                                        <h2 class="conteudo-titulo ">
+                                            Painel de Monitoramento de Manifestações de Ouvidoria (Covid-19)
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9">
+      				                <div class="conteudo-texto">
+  					                    <span>
+                                            Os painéis são uma forma de visualização de dados que permite um melhor entendimento por parte dos cidadãos. Por meio de elementos interativos como gráficos e filtros, busca-se apresentar uma visão geral e pormenorizada dos dados a fim de facilitar a comunicação e permitir uma análise mais aprofundada da situação em relação ao enfrentamento da Covid-19.  
+                                            </br></br>
+                                            Além disso, seguindo os princípios de governo aberto, a CGE incentivará a colaboração entre Governo e Sociedade fomentando a geração de painéis e análises relacionados à pandemia com base em dados oficiais disponibilizados.
+                                         </span>
+  				                    </div>
+  			                    </div>
+                            </div>
+                        </div>
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="paineis" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoP()">Painéis</a>
+                                            </h3>
+                                            <div>
+                                                <iframe    src="http://172.19.200.22:3000/public/dashboard/843fd7d1-2080-4416-b3e0-0e635f710fba"    frameborder="0"    width="800"    height="600"    allowtransparency></iframe>
+                                            </div>
+                                            <!--<ul>
+                                                <li>
+                                                    Painel de monitoramento de casos no Estado
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiOGRlNTk0MjgtY2MxNi00N2UzLWFmNmQtOTE3MmYwMGQyZTY1IiwidCI6ImExN2QwM2ZjLTRiYWMtNGI2OC1iZDY4LWUzOTYzYTJlYzRlNiJ9" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Painel de monitoramento de leitos no Estado
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiYzUzNGRkYjItYjgxZS00YzEwLTk3YzUtYjFkMmE3MmEwY2VkIiwidCI6ImExN2QwM2ZjLTRiYWMtNGI2OC1iZDY4LWUzOTYzYTJlYzRlNiJ9" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Painel de monitoramento de manifestações de Ouvidoria (Covid-19) 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://painelouvidoria.herokuapp.com/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Painel de monitoramento de casos no País 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://covid.saude.gov.br/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Painel de monitoramento de casos no Mundo 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="https://coronavirus.jhu.edu/map.html" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li> 
+                                            </ul>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="graficos" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoG()">Gráficos</a>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    Boletins de acompanhamento da evolução do Coronavírus em Santa Catarina 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://www.coronavirus.sc.gov.br/boletins/" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->    
+                    </section>
+                </div>
+            </div>
+        </div>   
+{% endblock %} 
