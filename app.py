@@ -2,9 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-import jwt
-import time
-
 @app.route('/')
 def index():
     return render_template('index.html')
