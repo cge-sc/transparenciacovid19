@@ -198,6 +198,11 @@
             </div>
         </footer>
         <!-- Custom JS -->
+        <script>
+            var link1 = "http://172.19.200.22:3000/public/question/4a74094e-6725-4955-815f-e225897ace44";
+            document.getElementById("grafico-tipos").src = "http://172.19.200.22:3000/public/question/4a74094e-6725-4955-815f-e225897ace44";
+            console.log(document.getElementById("grafico-tipos").src)
+        </script>
         <!-- Javascript para ocultar ou exibir os itens do menu quando em telas pequenas -->
         <script type="application/javascript">
             function mostraMenu() {
@@ -215,10 +220,12 @@
                 zd[0].classList.toggle("fechado");
             }
             function expandeBlocoP() {
+                console.log('Entrei na func P')
                 var zp = document.getElementsByName("paineis");
                 zp[0].classList.toggle("fechado");
             }
             function expandeBlocoG() {
+                console.log('Entrei na func G')
                 var zg = document.getElementsByName("graficos");
                 zg[0].classList.toggle("fechado");
             }
@@ -229,6 +236,23 @@
             function expandeBlocoNF() {
                 var znf = document.getElementsByName("nivelfederal");
                 znf[0].classList.toggle("fechado");
+            }
+            function trocaAba1() {
+                var za1 = document.getElementsByName("aba-1");
+                za1[0].classList.add("aba-ativa");
+                za1[1].classList.add("aba-ativa");
+                var za2 = document.getElementsByName("aba-2");
+                za2[0].classList.remove("aba-ativa");
+                za2[1].classList.remove("aba-ativa");
+            }
+            function trocaAba2() {
+                console.log('Entrei na func')
+                var za1 = document.getElementsByName("aba-1");
+                za1[0].classList.remove("aba-ativa");
+                za1[1].classList.remove("aba-ativa");
+                var za2 = document.getElementsByName("aba-2");
+                za2[0].classList.add("aba-ativa");
+                za2[1].classList.add("aba-ativa");
             }
         </script>
     </body>
