@@ -70,7 +70,7 @@
                                 
                                 <nav class="bloco-nav-links">
                                     <ul>  
-                                        <li><a href="http://dados.sc.gov.br/dataset/instrumentos-legais-para-enfrentamento-ao-coronavirus-covid-19" target="_blank" class="link">Legislação</a></li>
+                                        <!--<li><a href="http://dados.sc.gov.br/dataset/instrumentos-legais-para-enfrentamento-ao-coronavirus-covid-19" target="_blank" class="link">Legislação</a></li>-->
                                         <!--<li><a href="http://www.transparencia.sc.gov.br/glossario" target="_blank" class="link">Glossário</a></li>
                                         <li><a href="http://www.transparencia.sc.gov.br/faq" target="_blank" class="link">Perguntas Frequentes</a></li>-->
                                         <li><a href="http://www.transparencia.sc.gov.br/fale-conosco" target="_blank" class="link">Fale Conosco</a></li>
@@ -218,6 +218,10 @@
             function expandeBlocoD() {
                 var zd = document.getElementsByName("dadosabertos");
                 zd[0].classList.toggle("fechado");
+            }
+            function expandeBlocoL() {
+                var zl = document.getElementsByName("legislacao");
+                zl[0].classList.toggle("fechado");
             }
             function expandeBlocoP() {
                 console.log('Entrei na func P')
