@@ -62,10 +62,10 @@
 
                                 <div class="bloco-acessibilidade">
                                     Acessibilidade:
-                                    <a href="" class="link link-diminui" accesskey="2"></a>
-                                    <a href="" class="link link-aumenta" accesskey="3"></a>
-                                    <a href="" class="link link-inicial"></a>
-                                    <a href="" class="link link-contraste" accesskey="4"></a>
+                                    <a class="link link-diminui" onclick="aumentaFonte(-1)" accesskey="2"></a>
+                                    <a class="link link-aumenta" onclick="aumentaFonte(1)" accesskey="3"></a>
+                                    <a class="link link-inicial" onclick="resetaFonte()"></a>
+                                    <a class="link link-contraste" onclick="mudaContraste()" accesskey="4"></a>
                                 </div>
                                 
                                 <nav class="bloco-nav-links">
@@ -198,13 +198,10 @@
             </div>
         </footer>
         <!-- Custom JS -->
-        <script>
-            var link1 = "http://172.19.200.22:3000/public/question/4a74094e-6725-4955-815f-e225897ace44";
-            document.getElementById("grafico-tipos").src = "http://172.19.200.22:3000/public/question/4a74094e-6725-4955-815f-e225897ace44";
-            console.log(document.getElementById("grafico-tipos").src)
-        </script>
         <!-- Javascript para ocultar ou exibir os itens do menu quando em telas pequenas -->
         <script type="application/javascript">
+            fonteOriginal = 14;
+            fonteTamanho = 14;
             function mostraMenu() {
                 var x = document.getElementsByClassName("bloco-mobile-botao");
                 x[0].classList.toggle("aberto");
@@ -250,13 +247,35 @@
                 za2[1].classList.remove("aba-ativa");
             }
             function trocaAba2() {
-                console.log('Entrei na func')
                 var za1 = document.getElementsByName("aba-1");
                 za1[0].classList.remove("aba-ativa");
                 za1[1].classList.remove("aba-ativa");
                 var za2 = document.getElementsByName("aba-2");
                 za2[0].classList.add("aba-ativa");
                 za2[1].classList.add("aba-ativa");
+            }
+            function aumentaFonte($valor) {
+                fonteTamanho += $valor;
+        
+                // Impede que a fonte fique menor que o tamanho original
+                if(fonteTamanho < fonteOriginal)
+                {
+                    fonteTamanho = fonteOriginal;
+                }
+                // Impede que a fonte tenha mais que 6px do tamanho original
+                if(fonteTamanho > (fonteOriginal + 5) )
+                {
+                    fonteTamanho = fonteOriginal + 5;
+                }
+        
+                document.body.style.fontSize = fonteTamanho + 'px';
+            }
+            function resetaFonte(valor) {
+                fonteTamanho = fonteOriginal;
+                document.body.style.fontSize = fonteTamanho + 'px';
+            }        
+            function mudaContraste() {
+                document.body.classList.toggle('altocontraste');
             }
         </script>
     </body>

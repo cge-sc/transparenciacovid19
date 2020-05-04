@@ -7,7 +7,7 @@
         <!-- CONTEUDOS -->
         <div>&nbsp;</div>
         <div id="conteudo">
-            <div ui-view="main" style="">
+            <div ui-view="main">
                 <div class="loading-block">
                     <section id="busca">
                         <div class="container">
@@ -22,7 +22,7 @@
                                   <div class="col-xs-12 col-lg-8 col-md-10 col-sm-11">
                                     <div class="busca-barra">
                                         <input tr-auto-focus="" name="solrquery" type="text" class="busca-barra-input" placeholder="Digite aqui o que deseja procurar." style="height:48px;line-height:48px;padding-left:10px;width:100%;display:block">
-                                        <button class="busca-barra-botao" style="height:100%;top:0;right:0;position:absolute;background:#12844c;color:#fff;font-weight:500;padding:0 22px"><span class="icon">a</span> <span class="hidden-xs">PROCURAR</span> </button>
+                                        <button class="busca-barra-botao" style="height:100%;top:0;right:0;position:absolute;background:#8aba33;color:#fff;font-weight:500;padding:0 22px"><span class="icon">a</span> <span class="hidden-xs">PROCURAR</span> </button>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -33,7 +33,197 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
+                        <!-- FORM PESQUISAR -->
+
+                        <!--<div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 col-md-8">
+                                        <div class="busca-resultado-lista">
+                                            <div class="conteudo-header">
+                                                <h3 class="conteudo-subtitulo">Resultados</h3>
+                                            </div>
+                                            
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/receita/subareainteresse/21">
+                                                        <h3 class="busca-resultado-titulo ng-binding">RELATÓRIOS DA RECEITA - Receita Por Tipo de Entidade</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/receita/subareainteresse/21" class="busca-resultado-link ng-binding">/receita/subareainteresse/21</a>
+                                                <a href="/receita/subareainteresse/21">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/receita/subareainteresse/20">
+                                                        <h3 class="busca-resultado-titulo ng-binding">RELATÓRIOS DA RECEITA - Receita Líquida Disponível</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/receita/subareainteresse/20" class="busca-resultado-link ng-binding">/receita/subareainteresse/20</a>
+                                                <a href="/receita/subareainteresse/20">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/receita">
+                                                        <h3 class="busca-resultado-titulo ng-binding">Página Inicial - Receita</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/receita" class="busca-resultado-link ng-binding">/receita</a>
+                                                <a href="/receita">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        É o dinheiro que o Estado arrecada, em sua maioria por meio de tributos, que será utilizado para custear as despesas e os investimentos realizados para atender as necessidades da população.
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/receita">
+                                                        <h3 class="busca-resultado-titulo ng-binding">PRINCIPAIS CONSULTAS - Receita Detalhada</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/receita" class="busca-resultado-link ng-binding">/receita</a>
+                                                <a href="/receita">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        É o dinheiro que o Estado arrecada, em sua maioria por meio de tributos, que será utilizado para custear as despesas e os investimentos realizados para atender as necessidades da população.
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/dados-abertos/subareainteresse/34">
+                                                        <h3 class="busca-resultado-titulo ng-binding">Dados Abertos - Dados Abertos - Receita</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/dados-abertos/subareainteresse/34" class="busca-resultado-link ng-binding">/dados-abertos/subareainteresse/34</a>
+                                                <a href="/dados-abertos/subareainteresse/34">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        Dados Abertos - Receita
+                                                    </div>
+                                                </a>
+                                            </div><div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/responsabilidadefiscal/subareainteresse/5">
+                                                        <h3 class="busca-resultado-titulo ng-binding">Responsabilidade Fiscal - Receita Corrente Líquida</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/responsabilidadefiscal/subareainteresse/5" class="busca-resultado-link ng-binding">/responsabilidadefiscal/subareainteresse/5</a>
+                                                <a href="/responsabilidadefiscal/subareainteresse/5">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div<
+                                                <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/receita/2017">
+                                                        <h3 class="busca-resultado-titulo ng-binding">PRINCIPAIS CONSULTAS - Receita Detalhada 2009-2017</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/receita/2017" class="busca-resultado-link ng-binding">/receita/2017</a>
+                                                <a href="/receita/2017">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        É o dinheiro que o Estado arrecada, em sua maioria por meio de tributos, que será utilizado para custear as despesas e os investimentos realizados para atender as necessidades da população.
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/receita/subareainteresse/37">
+                                                        <h3 class="busca-resultado-titulo ng-binding">RELATÓRIOS DA RECEITA - Transferências da União Per Capita</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/receita/subareainteresse/37" class="busca-resultado-link ng-binding">/receita/subareainteresse/37</a>
+                                                <a href="/receita/subareainteresse/37">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="/responsabilidadefiscal/subareainteresse/32">
+                                                        <h3 class="busca-resultado-titulo ng-binding">Responsabilidade Fiscal - Custeio e Investimentos x Receita Corrente Líquida</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Página do Portal</span>
+                                                    </a>
+                                                </div>
+                                                <a href="/responsabilidadefiscal/subareainteresse/32" class="busca-resultado-link ng-binding">/responsabilidadefiscal/subareainteresse/32</a>
+                                                <a href="/responsabilidadefiscal/subareainteresse/32">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div ng-repeat="result in solrresult.data" class="busca-resultado ng-scope" style="">
+                                                <div>
+                                                    <a href="#">
+                                                        <h3 class="busca-resultado-titulo ng-binding">Onde encontro informações sobre as receitas arrecadadas pelo Estado de Santa Catarina?</h3>
+                                                        <span class="busca-resultado-titulo-link ng-binding">Perguntas Frequentes</span>
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="busca-resultado-link ng-binding"></a>
+                                                <a href="#">
+                                                    <div class="busca-resultado-descricao ng-binding">
+                                                        Na página inicial do Portal, selecione o menu &lt;i&gt;"Receita"&lt;/i&gt;  e acesse a consulta &lt;i&gt;Receita Detalhada&lt;/i&gt;.&lt;br&gt;&lt;br&gt;O cidadão pode contar ainda com a "Pergunta Cidadã" para ter acesso direto a determinadas receitas. De uma forma simples e rápida, é possível montar a pergunta de acordo com o seu interesse.
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div> 
+                                        <tr-list-pagination results="solrresult" ng-show="solrNumFound >= 0" class="ng-isolate-scope" style=""><div class="conteudo-bloco-paginacao">   <ul ng-show="totalPages > 1" class="ng-hide">       <li><a href="#" ng-click="firstPage()">Primeira</a></li>       <li><a href="#" ng-click="prevPage()">Anterior</a></li>       <li class="paginacao-ativo"><a href="#" ng-click="setPage(currentPage)" class="ng-binding">1</a></li>       <li>
+                                            </li>       <li> </li>       <li>
+                                                
+                                            </li>       <li></li>       <li><a href="#" ng-click="nextPage()">Próxima</a></li>       <li><a href="#" ng-click="lastPage()" class="ng-binding">1</a></li>       <li><a href="#" ng-click="lastPage()">Última</a></li>   </ul></div></tr-list-pagination></div>
+                    
+                                    <div ng-class="{'col-sm-4': solrNumFound}" ng-show="solrresultGlossario.length &amp;&amp; currentPage === 1" class="col-sm-4" style="">
+                                        <div class="busca-resultado-definicoes">
+                                            <h3 class="busca-resultado-definicoes-titulo">Definições relacionadas</h3>
+                                            <span ng-repeat="result in solrresultGlossario" class="ng-scope" style="">
+                                                <h4 class="busca-resultado-definicoes-subtitulo ng-binding">Receita</h4>
+                                                <p class="ng-binding">São todos os recursos recebidos pelo governo, provenientes do seu poder de tributar e de obter rendas.</p>
+                                            </span><span ng-repeat="result in solrresultGlossario" class="ng-scope" style="">
+                                                <h4 class="busca-resultado-definicoes-subtitulo ng-binding">Receita Corrente</h4>
+                                                <p class="ng-binding">São os recursos recebidos pelo governo que, em geral, afetam positivamente o seu patrimônio líquido (diferença entre os bens e os direitos do Estado e as suas obrigações). Como exemplo, têm-se as receitas tributárias, patrimoniais, industriais e outras de natureza semelhante, bem como as provenientes de transferências correntes. Analisando-se o efeito dessas receitas sobre o patrimônio líquido, verifica-se que, ao mesmo tempo que aumentam a disponibilidade de recursos (ativo), elas não criam nenhuma obrigação para o Estado (passivo), portanto aumentam o patrimônio líquido estadual.</p>
+                                            </span><span ng-repeat="result in solrresultGlossario" class="ng-scope" style="">
+                                                <h4 class="busca-resultado-definicoes-subtitulo ng-binding">Receita Tributária</h4>
+                                                <p class="ng-binding">São todos os recursos financeiros obtidos pela arrecadação de impostos, taxas e contribuições de melhoria.</p>
+                                            </span>
+                    
+                                            <div class="row">
+                                                <div class="busca-resultado-definicoes-links">
+                                                    <div class="col-xs-12 col-sm-12">
+                                                        <a ng-show="solrresultLengthGlossario > 3 &amp;&amp; solrresultGlossario.length < solrresultLengthGlossario" ng-click="solrLoadMoreGlossario()" href="#" class="definicoes-links-botao" style="">
+                                                            Ver Mais Definições
+                                                            <i ng-show="loadmore" class="fa fa-circle-o-notch fa-spin ng-hide"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 definicoes-links--direita">
+                                                        Fonte: <a ui-sref="app.glossario" href="/glossario">Glossário</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                    
+                                </div> 
+                            </div> 
+                        </div> -->
+                        <!-- RESULTADO -->
                     </section>
                 </div>
             </div>
