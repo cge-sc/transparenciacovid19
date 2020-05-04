@@ -2539,15 +2539,15 @@ select.conteudo-bloco-filtro-input {
   border: 0;
 }
 #home .despesas .card.receitas {
-  background-image: url('../img/assets/home/receitas.png');
+  background-image: url('../img/assets/home/covid19receita-deposito.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/receitas.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/receitas.png', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/covid19receita-deposito.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/covid19receita-deposito.jpg', sizingMethod='scale')";
 }
 #home .despesas .card.contratos {
   background-image: url('../img/assets/home/contratos.png');
@@ -2571,16 +2571,27 @@ select.conteudo-bloco-filtro-input {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/remuneracao.png', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/remuneracao.png', sizingMethod='scale')";
 }
-#home .despesas .card.despesas {
-  background-image: url('../img/assets/home/despesas.png');
+#home .despesas .card.empenhos {
+  background-image: url('../img/assets/home/remuneracao.png');
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/despesas.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/despesas.png', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/remuneracao.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/remuneracao.png', sizingMethod='scale')";
+}
+#home .despesas .card.despesas {
+  background-image: url('../img/assets/home/covid19despesa.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/covid19despesa.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/covid19despesa.jpg', sizingMethod='scale')";
 }
 #home .despesas .card.fornecedores {
   background-image: url('../img/assets/home/fornecedores.png');
@@ -2702,6 +2713,17 @@ select.conteudo-bloco-filtro-input {
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/dados.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/dados.jpg', sizingMethod='scale')";
+}
+#home .despesas .card.legislacao {
+  background-image: url('../img/assets/home/legislacao.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/legislacao.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/legislacao.jpg', sizingMethod='scale')";
 }
 #home .despesas .card.seguranca {
   background-image: url('../img/assets/home/seguranca.jpg');
