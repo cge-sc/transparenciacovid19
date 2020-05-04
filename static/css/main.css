@@ -2648,6 +2648,61 @@ select.conteudo-bloco-filtro-input {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/saude.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/saude.jpg', sizingMethod='scale')";
 }
+#home .despesas .card.leitos {
+  background-image: url('../img/assets/home/leitos.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/leitos.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/leitos.jpg', sizingMethod='scale')";
+}
+#home .despesas .card.casos {
+  background-image: url('../img/assets/home/casos.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/casos.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/casos.jpg', sizingMethod='scale')";
+}
+#home .despesas .card.boletins {
+  background-image: url('../img/assets/home/boletins.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/boletins.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/boletins.jpg', sizingMethod='scale')";
+}
+#home .despesas .card.demandas {
+  background-image: url('../img/assets/home/demandas.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/demandas.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/demandas.jpg', sizingMethod='scale')";
+}
+#home .despesas .card.dados {
+  background-image: url('../img/assets/home/dados.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/dados.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/dados.jpg', sizingMethod='scale')";
+}
 #home .despesas .card.seguranca {
   background-image: url('../img/assets/home/seguranca.jpg');
   background-position: center center;
