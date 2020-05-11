@@ -469,32 +469,56 @@ h6 {
   background-color: #8aba33;
 }
 .bloco-nav-menu ul li .botao.botao-1 .ico {
-  background-position: 0px 0px;
   background-image: url(../img/assets/sobre.png);
+  width:30px;
+  height:30px;
+  margin: 0 auto;
+  padding: 15px;
+  background-size: 100%;
+  opacity: 1;
 }
 .bloco-nav-menu ul li .botao.botao-2 {
   background-color: #d8313e;
 }
 .bloco-nav-menu ul li .botao.botao-2 .ico {
-  background-position: 0px 0px;
   background-image: url(../img/assets/servers.png);
+  width:30px;
+  height:30px;
+  border:0;
+  padding: 15px;
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 1;;
 }
 .bloco-nav-menu ul li .botao.botao-3 {
   background-color: #5675b7;
 }
 .bloco-nav-menu ul li .botao.botao-3 .ico {
-  background-position: 0px 0px;
   background-image: url(../img/assets/report.png);
+  width:30px;
+  height:30px;
+  border:0;
+  padding: 15px;
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 .bloco-nav-menu ul li .botao.botao-4 {
   background-color: #666;
 }
 .bloco-nav-menu ul li .botao.botao-4 .ico {
-  background-image: url(../img/assets/governo.png);
-  width: 40px;
-  height: 31px;
-  margin-left: 16px;
-  background-position: 0px 0px;
+  background-image: url(../img/assets/virus3.png);
+  width:30px;
+  height:30px;
+  border:0;
+  padding: 15px;
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 1;
+;
 }
 .bloco-nav-menu ul li .botao.botao-5 {
   width: 100%;
@@ -5315,6 +5339,11 @@ select.conteudo-bloco-filtro-input {
   #header.fixo .bloco-nav-menu ul li .botao {
     height: 60px;
   }
+  #header.fixo .bloco-nav-menu ul li a.botao {
+    align-items: center;
+    display: flex;
+    padding-top: 5px;
+  }  
   #header.fixo .bloco-nav-menu ul li .botao.botao-5 {
     width: 50%;
     background-color: #cfcfcf;
@@ -6109,12 +6138,6 @@ select.conteudo-bloco-filtro-input {
 @media (min-width: 1200px) {
   #header.fixo .bloco-nav-menu ul li.logo {
     margin-top: 5px;
-  }
-  #header.fixo .bloco-nav-menu ul li .botao.botao-3 {
-    padding-top: 14px;
-  }
-  #header.fixo .bloco-nav-menu ul li .botao.botao-3 .texto {
-    text-align: center;
   }
   #header.fixo .bloco-nav-menu ul li .botao.botao-5 {
     padding: 12px 0 0 26px;

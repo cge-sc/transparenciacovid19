@@ -36,9 +36,9 @@
     <meta name="google-site-verification" content="rPN_EaZlChbEPb06oDiMuPLfpAsRMSjLPvoRd48nnC8" />
 </head>
 
-<body>
+<body scroll clique>
         <!--HEADER/MENU-->    
-        <header id="header">
+        <header name="header" id="header">
             <div class="container">
                 <div class="row">                    
                     <div class="header-bloco-logo col-xs-12">
@@ -68,7 +68,7 @@
                                     <a class="link link-diminui" onclick="aumentaFonte(-1)" accesskey="2"></a>
                                     <a class="link link-aumenta" onclick="aumentaFonte(1)" accesskey="3"></a>
                                     <a class="link link-inicial" onclick="resetaFonte()"></a>
-                                    <a class="link link-contraste" onclick="mudaContraste()" accesskey="4"></a>
+                                    <a class="link link-contraste" onclick="mudaContraste()" ="4"></a>
                                 </div>
                                 
                                 <nav class="bloco-nav-links">
@@ -92,19 +92,38 @@
                                 <a href="/" class="logo-link" title="Portal da Transparência do Poder Executivo de Santa Catarina">&nbsp</a>
                             </li>
                             <li>
-                                <a href="/sobre" class="botao botao-1"><span><img src="{{ url_for('static', filename='img/assets/sobre.png') }}" alt="" style="width:30px;height:30px;padding:3px;"></span>&nbsp;&nbsp;<span class="texto">Sobre</span></a>
+                                <a href="/sobre" class="botao botao-1">
+                                    <img class="ico hidden-sm hidden-md"> <!--src="{{ url_for('static', filename='img/assets/sobre.png') }}" alt="" style="width:30px;height:30px;padding:3px;"> -->
+                                    <span class="texto">Sobre</span>
+                                    <!--<span class="fechar visible-xs">X</span>
+                                    <span class="abrir visible-xs"></span>-->
+                                </a>
                             </li>
                             <li>
-                                <a href="/consultas" class="botao botao-2"><img src="{{ url_for('static', filename='img/assets/servers.png') }}" alt="" style="width:30px;height:30px;padding:3px;"><span class="texto">Consultas e Dados Abertos</span></a>
+                                <a href="/consultas" class="botao botao-2">
+                                    <img class="ico hidden-sm hidden-md"> <!--src="{{ url_for('static', filename='img/assets/servers.png') }}" alt="" style="width:30px;height:30px;padding:3px;"> -->
+                                    <span class="texto">Consultas e Dados Abertos</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="/paineis" class="botao botao-3"><img src="{{ url_for('static', filename='img/assets/report.png') }}" alt="" style="width:30px;height:30px;padding:3px;"><span class="texto">Painéis e Gráficos</span></a>
+                                <a href="/paineis" class="botao botao-3">
+                                    <img class="ico hidden-sm hidden-md" > <!--src="{{ url_for('static', filename='img/assets/report.png') }}" alt="" style="width:30px;height:30px;padding:3px;"> -->
+                                    <span class="texto">Painéis e Gráficos</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="/saibamais" class="botao botao-4"><img src="{{ url_for('static', filename='img/assets/virus(3).png') }}" alt="" style="width:30px;height:30px;padding:3px;"><span class="texto">Saiba mais sobre a Covid-19</span></a>
+                                <a href="/saibamais" class="botao botao-4">
+                                    <img class="ico hidden-sm hidden-md"> <!--src="{{ url_for('static', filename='img/assets/virus(3).png') }}" alt="" style="width:30px;height:30px;padding:3px;"> -->
+                                    <span class="texto">Saiba mais sobre a Covid-19</span>
+                                </a>
                             </li>
                             <li class="hidden-xs">
-                                <a href="/busca" class="botao botao-5" accesskey="7"><span class="ico hidden-sm hidden-md"></span><span class="texto">Pesquisar</span><span class="abrir visible-xs"></span><span class="fechar visible-xs">X</span></a>
+                                <a href="/busca" class="botao botao-5" accesskey="7">
+                                    <span class="ico hidden-sm hidden-md"></span>
+                                    <span class="texto">Pesquisar</span>
+                                    <span class="abrir visible-xs"></span>
+                                    <span class="fechar visible-xs">X</span>
+                                </a>
                                 <div class="botao botao-6">
                                     <a href="" class="link link-diminui"></a>
                                     <a href="" class="link link-aumenta"></a><br/>
@@ -117,7 +136,9 @@
                             <div class="busca-form">
                                 <form>
                                     <input type="text" name="busca" class="busca-input js-nao-fechar" placeholder="DIGITE O QUE VOCÊ PROCURA">
-                                    <button class="busca-envia"><span class="ico"></span></button>
+                                    <button class="busca-envia">
+                                        <span class="ico">
+                                    </span></button>
                                 </form>
                             </div>
                             <a href="http://www.transparencia.sc.gov.br/pesquisar" class="botao-fechar">x</a>
@@ -203,6 +224,16 @@
         <!-- Custom JS -->
         <!-- Javascript para ocultar ou exibir os itens do menu quando em telas pequenas -->
         <script type="application/javascript">
+            window.addEventListener("scroll", function (event) {
+                var scroll = this.scrollY;
+                if (scroll >= 140){
+                    var h1 = document.getElementsByName("header");
+                    h1[0].classList.add("fixo");
+                } else {
+                    var h1 = document.getElementsByName("header");
+                    h1[0].classList.remove("fixo");
+                }
+            });
             fonteOriginal = 14;
             fonteTamanho = 14;
             function mostraMenu() {
