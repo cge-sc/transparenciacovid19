@@ -34,5 +34,9 @@ def ouvidoria():
 def contratos():
     return render_template('contratos.html')
 
+@app.route('/contratos2')
+def contratos2():
+    return render_template('contratos2.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
