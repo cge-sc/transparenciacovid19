@@ -30,13 +30,9 @@ def busca():
 def ouvidoria():
     return render_template('ouvidoria.html')
 
-@app.route('/contratos')
-def contratos():
-    return render_template('contratos.html')
-
-@app.route('/contratos2')
-def contratos2():
-    return render_template('contratos2.html')
+@app.route('/processos')
+def processos():
+    return render_template('processos.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
