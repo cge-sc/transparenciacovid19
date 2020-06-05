@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block conteudo %}      
+        <!-- CONTEUDOS -->
+        <div>&nbsp;</div>
+        <div id="conteudo">
+            <div ui-view="main">
+                <div class="loading-block">
+                    <section id="responsabilidade">
+                        <div class="container balanco-graficos">
+                            <div class="row">
+                                <!-- HEADER DO CONTEUDO -->
+                                <div class="col-xs-12">
+                                    <div class="conteudo-header">
+                                        <h2 class="conteudo-titulo ">
+                                            Painel de Contratos Emergenciais para enfrentamento da Covid-19
+                                        </h2>
+                                    </div>
+                                </div>
+                                <!-- ABAS COM GRÁFICOS -->
+                                <div class="view-macro-contexto">
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div class="conteudo-bloco balanco-graficos-bloco">
+                                            <div class="conteudo-bloco-abas-cabecalho">
+                                                <a name="aba-1" class="conteudo-bloco-abas-botao aba-1 aba-ativa" onclick="trocaAba1()">
+                                                    <span class="icon">c</span>
+                                                    Por data do contrato
+                                                </a>
+                                                <a name="aba-2" class="conteudo-bloco-abas-botao aba-2" onclick="trocaAba2()">
+                                                    <span class="icon">i</span>
+                                                    Por situação do contrato
+                                                </a>
+                                            </div>
+                                            <div class="conteudo-bloco-interno">
+                                                <!-- ABA 1 -->
+                                                <div name="aba-1" class="row conteudo-bloco-aba aba-ativa">
+                                                    <!-- TEXTO INTERNO ABA 1 -->
+                                                    <!--<div class="col-xs-12 col-sm-12 col-md-6 ">
+                                                        <div class="conteudo-bloco-valor valor-grande">551</div>
+                                                        Foi o quantidade de manifestações em <b>2020</b><br>
+                                                        <br>
+                                                    </div>-->
+                                                    <!-- GRAFICO ABA 1-->
+                                                    <div class="col-xs-12">
+                                                        <div class="balanco-grafico" style="text-align: center">
+                                                            <div class="balanco-grafico-container">
+                                                                <div id="chart-ano" config="chartAnoConfig" class="ng-isolate-scope" data-highcharts-chart="9">
+                                                                    <div class="highcharts-container" id="highcharts-33" style="position: relative; overflow: hidden; width: 710px; height: 300px; text-align: left; line-height: normal; z-index: 0; font-family: Open Sans, Arial, Helvetica, sans-serif; left: 0.5px; top: 0.983337px;">
+                                                                        <iframe src="http://200.19.215.246:3000/public/question/6b4fac6f-108a-4e95-a788-5338e95fd0fc" frameborder="0" width="710" height="300" allowtransparency> </iframe>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /VISAO POR DATA -->
+                                                <!-- ABA 2 -->
+                                                <div name="aba-2" class="row conteudo-bloco-aba">
+                                                    <!-- TEXTO INTERNO ABA 2 -->
+                                                        <!--<div class="col-xs-12 col-sm-12" style="">
+                                                            <div class="conteudo-bloco-valor valor-grande">356</div>
+                                                                O tipo de manifestação com mais demanda é <b>Solicitação de informação</b>
+                                                        </div>-->
+                                                        <!-- GRAFICO ABA 2 -->
+                                                        <div class="col-xs-12">
+                                                            <div class="balanco-grafico" style="text-align: center">
+                                                                <div class="balanco-grafico-container">
+                                                                    <div id="chart-ano" config="chartAnoConfig" class="ng-isolate-scope" data-highcharts-chart="9">
+                                                                        <div class="highcharts-container" id="highcharts-33" style="position: relative; overflow: hidden; width: 710px; height: 300px; text-align: left; line-height: normal; z-index: 0; font-family: Open Sans, Arial, Helvetica, sans-serif; left: 0.5px; top: 0.983337px;">
+                                                                            <iframe src="http://200.19.215.246:3000/public/question/8236966f-5e72-4ebd-aa3e-e2214be5881f" frameborder="0" width="710" height="300" allowtransparency> </iframe>
+                                                                            <!--<iframe name="grafico-tipos" src="{{iframeUrl}}" frameborder="0" width="710" height="300" allowtransparency></iframe>-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div><!-- /VISAO POR TIPOS -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- QUADRO LATERAL -->
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div class="conteudo-bloco balanco-graficos-bloco">
+                                            <div class="conteudo-bloco-titulo">
+                                                Contratos Emergenciais 
+                                            </div>
+                                            <div hm-read-more="" hm-text="Este painel tem como objetivo a transparência de informações relativas a Contratos Emergenciais amparados pela Lei Federal nº 13.979, de 6 de fevereiro de 2020, que possibilita a dispensa de licitação, entre outros critérios de flexibilização da Lei Geral de Licitações e Contratos, para aquisição de bens, serviços, inclusive de engenharia, obras, alienações e locações necessários ao enfrentamento da pandemia do novo coronavírus (Sars-CoV-2)." hm-limit="116"  hm-link-class="conteudo-bloco-interno-mais" class="conteudo-bloco-interno ng-isolate-scope"><span name="text">
+                                                <span ng-bind-html="vm.lessText" style="white-space:pre-wrap;" class="ng-binding">Este painel tem como objetivo a transparência de informações relativas a Contratos Emergenciais amparados pela Lei Federal nº 13.979, de 6 de fevereiro de 2020, que possibilita a dispensa de licitação, entre outros critérios de flexibilização da Lei Geral de Licitações e Contratos, para aquisição de bens, serviços, inclusive de engenharia, obras, alienações e locações necessários ao enfrentamento da pandemia do novo coronavírus (Sars-CoV-2).</span>
+                                                <span ng-show="vm.showMoreText" class="more-show-hide" ng-bind-html="vm.moreText" style="white-space:pre-wrap;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9">
+                                  <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <tr-data-update><div class="conteudo-info"><span class="icon">E</span><span class="conteudo-info-bloco ng-binding"><b>Dados atualizados em: </b>Verificar painel abaixo</span><span class="conteudo-info-divisor hidden-xs">|</span><span class="conteudo-info-bloco ng-binding"><b>Fonte: </b>Sistema Integrado de Planejamento e Gestão Fiscal (SIGEF)</span><span class="conteudo-info-divisor hidden-xs hidden-sm">|</span><span class="conteudo-info-bloco ng-binding"><b>Gestor: </b>Secretaria de Estado da Fazenda</span></div></tr-data-update>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="paineis" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoP()">Mais gráficos</a>
+                                            </h3>
+                                            <div>
+                                                <iframe src="http://200.19.215.246:3000/public/dashboard/17d6e2e3-bc4d-4bff-b535-a951e3d11f8b" frameborder="0" width="1130" height="1400" allowtransparency></iframe>
+                                            </div>
+                                            <div>
+                                                <iframe src="http://200.19.215.246:3000/public/question/7d375e65-574a-4814-a7c6-f53ca4169804" frameborder="0" width="1130" height="500" allowtransparency></iframe>
+                                            </div>                                   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conteudo-bloco">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div name="graficos" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                            <h3 class="conteudo-bloco-orcamento-titulo">
+                                                <a onclick="expandeBlocoG()">Dados Abertos</a>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    Conjunto de dados de contratos emergenciais 
+                                                    <div class="orcamento-links">
+                                                        <a target="_blank" href="http://dados.sc.gov.br/dataset/manifestacoes-de-ouvidoria-sobre-o-coronavirus-covid-19" class="link-padrao"><span class="icon">p</span></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </section>
+                </div>
+            </div>
+        </div>   
+        <script>
+            var link1 = "http://172.19.200.22:3000/public/question/4a74094e-6725-4955-815f-e225897ace44";
+            document.getElementById("grafico-tipos").src = "http://172.19.200.22:3000/public/question/4a74094e-6725-4955-815f-e225897ace44";
+            console.log(document.getElementById("grafico-tipos"))
+        </script>
+{% endblock %} 
