@@ -48,7 +48,7 @@
                                                         <div class="balanco-grafico" style="text-align: center">
                                                             <div class="balanco-grafico-container">
                                                                 <div id="chart-ano" config="chartAnoConfig" class="ng-isolate-scope" data-highcharts-chart="9">
-                                                                    <div class="highcharts-container" id="highcharts-33" style="position: relative; overflow: hidden; width: 710px; height: 430px; text-align: left; line-height: normal; z-index: 0; font-family: Open Sans, Arial, Helvetica, sans-serif; left: 0.5px; top: 0.983337px;">
+                                                                    <div class="highcharts-container" id="highcharts-33" style="position: relative; overflow: hidden; width: 710px; height: 440px; text-align: left; line-height: normal; z-index: 0; font-family: Open Sans, Arial, Helvetica, sans-serif; left: 0.5px; top: 0.983337px;">
                                                                         <iframe src="http://200.19.215.246:3000/public/question/82106925-5fe3-426f-b8d5-4bcc2821d30f" frameborder="0" width="680" height="410" allowtransparency> </iframe>
                                                                     </div>
                                                                 </div>
@@ -69,7 +69,7 @@
                                                                 <div class="balanco-grafico-container">
                                                                     <div id="chart-ano" config="chartAnoConfig" class="ng-isolate-scope" data-highcharts-chart="9">
                                                                         <div class="highcharts-container" id="highcharts-33" style="position: relative; overflow: hidden; width: 710px; height: 430px; text-align: left; line-height: normal; z-index: 0; font-family: Open Sans, Arial, Helvetica, sans-serif; left: 0.5px; top: 0.983337px;">
-                                                                            <iframe src="http://200.19.215.246:3000/public/question/6f37fc48-9a63-4f7b-b06a-5160d5376f65" frameborder="0" width="680" height="410" allowtransparency> </iframe>
+                                                                            <iframe src="http://200.19.215.246:3000/public/question/6f37fc48-9a63-4f7b-b06a-5160d5376f65" frameborder="0" width="680" height="440" allowtransparency> </iframe>
                                                                             <!--<iframe name="grafico-tipos" src="{{iframeUrl}}" frameborder="0" width="710" height="300" allowtransparency></iframe>-->
                                                                         </div>
                                                                     </div>
@@ -94,18 +94,33 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-10 col-md-9">
+
+                                <!-- METADADOS E OBSERVACOES -->
+                                <!--<div class="col-xs-12 col-sm-10 col-md-9">-->
                                   <div class="container">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <tr-data-update><div class="conteudo-info"><span class="icon">E</span><span class="conteudo-info-bloco ng-binding"><b>Dados atualizados em: </b>Verificar painel abaixo</span><span class="conteudo-info-divisor hidden-xs">|</span><span class="conteudo-info-bloco ng-binding"><b>Fonte: </b>Módulo de Contratos do Sistema Integrado de Planejamento e Gestão Fiscal (SIGEF)</span><span class="conteudo-info-divisor hidden-xs hidden-sm">|</span><span class="conteudo-info-bloco ng-binding"><b>Gestor: </b>Secretaria de Estado da Administração</span></div></tr-data-update>
+                                            <tr-data-update>
+                                                <div class="conteudo-info">
+                                                    <span class="icon">E</span>
+                                                    <span class="conteudo-info-bloco"><b>Dados atualizados em: </b>Verificar painel abaixo</span>
+                                                    <span class="conteudo-info-divisor hidden-xs">|</span>
+                                                    <span class="conteudo-info-bloco"><b>Fonte: </b>Módulo de Contratos do Sistema Integrado de Planejamento e Gestão Fiscal (SIGEF)</span>
+                                                    <span class="conteudo-info-divisor hidden-xs hidden-sm">|</span>
+                                                    <span class="conteudo-info-bloco"><b>Gestor: </b>Secretaria de Estado da Administração</span>
+                                                    </br>
+                                                    </br><b>Observação 1: </b>O painel não apresenta os contratos estabelecidos especificamente pela Secretaria de Estado da Saúde. Essas informações são disponibilizadas em painel específico uma vez que essa Secretaria se utiliza de sistema informatizado próprio.
+                                                    </br><b>Observação 2: </b>As aquisições realizadas por dispensa de licitação não exigem a publicação de edital.
+                                                    </br><b>Observação 3: </b>O conceito de “emergencial” adotado neste painel diz respeito à natureza do objeto em questão, ou seja, o enfrentamento da pandemia da Covid-19.
+                                                </div>
+                                            </tr-data-update>                                           
                                         </div>
                                     </div>
-                                  </div>
                                 </div>
+                            </div>
                         </div>
-                        <div class="conteudo-bloco">
+                        
+                        <!--<div class="conteudo-bloco">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xs-12">
@@ -115,9 +130,7 @@
                                             </h3>
                                             <ul>
                                                 <li>
-                                                    O painel não apresenta os contratos estabelecidos especificamente pela Secretaria de Estado da Saúde. 
-                                                    </br>
-                                                    Tais informações são disponibilizadas em painel específico uma vez que essa Secretaria se utiliza de sistema informatizado próprio. 
+                                                    O painel não apresenta os contratos estabelecidos especificamente pela Secretaria de Estado da Saúde, tais informações são disponibilizadas em painel específico uma vez que essa Secretaria se utiliza de sistema informatizado próprio. 
                                                     <div class="orcamento-links">
                                                         <a target="_blank" href="http://sgsweknow.saude.sc.gov.br/#/public/dashboard/bG9jYWxob3N0/211/%7B68AE9BAF-B5AE-4548-8681-1DCA3E838F66%7D/C3614206-A443-0120-45CF-D75D2600AF2D-8F0" class="link-padrao"><span class="icon">p</span></a>
                                                     </div>
@@ -133,7 +146,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                         <div class="conteudo-bloco">
                             <div class="container">
@@ -144,7 +157,7 @@
                                                 <a onclick="expandeBlocoP()">Mais gráficos</a>
                                             </h3>
                                             <div>
-                                                <iframe src="http://200.19.215.246:3000/public/dashboard/9ac12511-c945-421d-bdb4-a335eb923f49" frameborder="0" width="1130" height="800" allowtransparency></iframe>
+                                                <iframe src="http://200.19.215.246:3000/public/dashboard/9ac12511-c945-421d-bdb4-a335eb923f49" frameborder="0" width="1130" height="550" allowtransparency></iframe>
                                                 <!--<iframe src="http://172.19.200.22:3000/public/dashboard/e2e7b90c-cbbb-48eb-b347-a7a6ca127804" frameborder="0" width="1130" height="1600" allowtransparency></iframe>-->
                                             </div>                               
                                         </div>
@@ -156,7 +169,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        <div name="brutos" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                        <div name="brutos" class="conteudo-bloco-orcamento"  tr-expande-bloco="">
                                             <h3 class="conteudo-bloco-orcamento-titulo">
                                                 <a onclick="expandeBlocoB()">Dados Brutos</a>
                                             </h3>
@@ -172,7 +185,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        <div name="abertos" class="conteudo-bloco-orcamento"  tr-expande-bloco="" style="">
+                                        <div name="abertos" class="conteudo-bloco-orcamento"  tr-expande-bloco="">
                                             <h3 class="conteudo-bloco-orcamento-titulo">
                                                 <a onclick="expandeBlocoA()">Dados Abertos</a>
                                             </h3>
@@ -180,7 +193,7 @@
                                                 <li>
                                                     Conjunto de dados de contratos emergenciais 
                                                     <div class="orcamento-links">
-                                                        <a target="_blank" href="http://dados.sc.gov.br/dataset/manifestacoes-de-ouvidoria-sobre-o-coronavirus-covid-19" class="link-padrao"><span class="icon">p</span></a>
+                                                        <a target="_blank" href="http://dados.sc.gov.br/dataset/covid19-contratos-emergenciais" class="link-padrao"><span class="icon">p</span></a>
                                                     </div>
                                                 </li>
                                             </ul>
