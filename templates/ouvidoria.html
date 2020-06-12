@@ -47,10 +47,8 @@
                                                     <div class="col-xs-12">
                                                         <div class="balanco-grafico" style="text-align: center">
                                                             <div class="balanco-grafico-container">
-                                                                <div id="chart-ano" config="chartAnoConfig" class="ng-isolate-scope" data-highcharts-chart="9">
-                                                                    <div class="highcharts-container" id="highcharts-33" style="position: relative; overflow: hidden; width: 710px; height: 300px; text-align: left; line-height: normal; z-index: 0; font-family: Open Sans, Arial, Helvetica, sans-serif; left: 0.5px; top: 0.983337px;">
-                                                                        <iframe src="http://200.19.215.246:3000/public/question/9f001561-a208-4eb2-83c8-4fb0a725882a" frameborder="0" width="710" height="300" allowtransparency> </iframe>
-                                                                    </div>
+                                                                <div style="--aspect-ratio: 8/3.2;">
+                                                                    <iframe src="http://200.19.215.246:3000/public/question/9f001561-a208-4eb2-83c8-4fb0a725882a" frameborder="0" width="710" height="300" allowtransparency> </iframe>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -67,11 +65,9 @@
                                                         <div class="col-xs-12">
                                                             <div class="balanco-grafico" style="text-align: center">
                                                                 <div class="balanco-grafico-container">
-                                                                    <div id="chart-ano" config="chartAnoConfig" class="ng-isolate-scope" data-highcharts-chart="9">
-                                                                        <div class="highcharts-container" id="highcharts-33" style="position: relative; overflow: hidden; width: 710px; height: 300px; text-align: left; line-height: normal; z-index: 0; font-family: Open Sans, Arial, Helvetica, sans-serif; left: 0.5px; top: 0.983337px;">
-                                                                            <iframe src="http://200.19.215.246:3000/public/question/097e18eb-6061-42af-bc57-911d7c093135" frameborder="0" width="710" height="300" allowtransparency> </iframe>
-                                                                            <!--<iframe name="grafico-tipos" src="{{iframeUrl}}" frameborder="0" width="710" height="300" allowtransparency></iframe>-->
-                                                                        </div>
+                                                                   <div style="--aspect-ratio: 8/3.2;">
+                                                                        <iframe src="http://200.19.215.246:3000/public/question/097e18eb-6061-42af-bc57-911d7c093135" frameborder="0" width="710" height="300" allowtransparency> </iframe>    
+                                                                        <!--<iframe name="grafico-tipos" src="{{iframeUrl}}" frameborder="0" width="710" height="300" allowtransparency></iframe>-->
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -121,9 +117,24 @@
                                             <h3 class="conteudo-bloco-orcamento-titulo">
                                                 <a onclick="expandeBlocoP()">Mais gráficos</a>
                                             </h3>
-                                            <div>
+                                            <!--<div>
                                                 <iframe src="http://200.19.215.246:3000/public/dashboard/1cb27dde-8f52-489e-b7f5-810021713bbb" frameborder="0" width="1130" height="1500" allowtransparency></iframe>
-                                            </div>                                 
+                                            </div>--> 
+                                            <div style="--aspect-ratio: 12/16;">
+                                                <iframe 
+                                                    src="http://200.19.215.246:3000/public/dashboard/1cb27dde-8f52-489e-b7f5-810021713bbb"
+                                                    width="1130"
+                                                    height="1500"
+                                                    frameborder="0"
+                                                    allowtransparency
+                                                >
+                                                </iframe>
+                                            </div>
+                                            
+
+
+  
+                                  
                                         </div>
                                     </div>
                                 </div>
