@@ -2726,6 +2726,17 @@ select.conteudo-bloco-filtro-input {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/processos.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/processos.jpg', sizingMethod='scale')";
 }
+#home .despesas .card.contratos {
+  background-image: url('../img/assets/home/contratos.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/contratos.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/assets/home/contratos.jpg', sizingMethod='scale')";
+}
 #home .despesas .card.demandas {
   background-image: url('../img/assets/home/demandas.jpg');
   background-position: center center;
