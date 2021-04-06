@@ -52,7 +52,7 @@ heroku create transparenciacovid9
 ### Configurar o ambiente para Python com o buildpack da Heroku
 ```console
 heroku buildpacks:set heroku/python
-
+```
 ### Verificar se está apontando para transparenciacovid19
 ```console
 heroku remote -v
