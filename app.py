@@ -1,6 +1,12 @@
 from flask import Flask, render_template
 
+#import plotly.express as px
+
 app = Flask(__name__)
+
+
+#fig =px.scatter(x=range(10), y=range(10))
+#fig.write_html("templates/grafico.html")
 
 @app.route('/')
 def index():
@@ -37,6 +43,10 @@ def processos():
 @app.route('/contratos')
 def contratos():
     return render_template('contratos.html')
+
+@app.route('/grafico')
+def grafico():
+    return render_template('grafico.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
