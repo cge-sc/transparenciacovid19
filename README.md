@@ -16,10 +16,11 @@ Foi utilizada a hospedagem na [Heroku](https://www.heroku.com/), nuvem, como amb
 
 ## Ambiente de desenvolvimento
 ### Criar e ativar o ambiente virtual
+```console
 pip3 install virtualenv
 virtualenv env
 source env/bin/activate
-
+```
 ### Instalar as dependências
 pip3 install flask
 
