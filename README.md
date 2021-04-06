@@ -3,13 +3,14 @@
 Código fonte da página de transparência sobre enfrentamento da Covid-19 no Estado de Santa Catarina - [transparenciacovid19.sc.gov.br](http://transparenciacovid19.sc.gov.br/)
 
 ## Objetivo
-O site trasparenciacovid19.sc.gov.br foi criado pela CGE/SC tendo como objetivo principal disponibilizar informações de forma simples e com foco nos gastos públicos catarinense e demais atividades relacionadas à transparência no enfrentamento da pandemia do novo coronavírus. (Sars-CoV-2)
+O site foi criado pela [CGE/SC](https://cge.sc.gov.br/) tendo como objetivo principal disponibilizar informações de forma simples e com foco nos gastos públicos catarinense e demais atividades relacionadas à transparência no enfrentamento da pandemia do novo coronavírus (Sars-CoV-2).
 
 ## Tecnologia
-Foi aproveitado muito do HTML e CSS do Portal da Transparência (transparencia.sc.gov.br), sendo necessários alguns ajustes. Desta forma mantém um alinhamento ao portal, através de uma identidade visual semelhante e facilita a navegação daqueles que já utilizam esta página.
-Para fazer o roteamento das páginas foi usado o Flask por ser um microframework Python leve e escalável. Optou-se por criar o roteamento dentro do arquivo app.py, uma vez que são poucas páginas dentro do site. 
-O Jinja serve para otimizar a escrita de HTML, permitindo assim isolar trechos que possam ser reutilizados, tais como cabeçalhos e rodapés. 
-Foi utilizada a hospedagem na Heroku, nuvem, como ambiente de homologação, permitindo assim uma agilidade nas entregas das versões, tanto de novas funcionalidades quanto de correções e ajustes.
+Foi aproveitado muito do HTML e CSS do Portal da Transparência [transparencia.sc.gov.br](http://www.transparencia.sc.gov.br/), sendo necessários alguns ajustes. Desta forma mantém um alinhamento ao portal, através de uma identidade visual semelhante e facilita a navegação daqueles que já utilizam esta página.
+Para fazer o roteamento das páginas foi usado o [Flask](https://flask.palletsprojects.com/) por ser um microframework Python leve e escalável. Optou-se por criar o roteamento dentro do arquivo app.py, uma vez que são poucas páginas dentro do site. 
+O [Jinja](https://jinja.palletsprojects.com/) serve para otimizar a escrita de HTML, permitindo assim isolar trechos que possam ser reutilizados, tais como cabeçalhos e rodapés. 
+Os gráficos disponibilziados dentro da página foram criados usando o [Metabase](https://www.metabase.com/) para agilizar o processo de criação.
+Foi utilizada a hospedagem na [Heroku](https://www.heroku.com/), nuvem, como ambiente de homologação, permitindo assim uma agilidade nas entregas das versões, tanto de novas funcionalidades quanto de correções e ajustes.
 
 ## Ambiente de desenvolvimento
 ### Criar e ativar o ambiente virtual
