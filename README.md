@@ -22,41 +22,49 @@ virtualenv env
 source env/bin/activate
 ```
 ### Instalar as dependências
+```console
 pip3 install flask
-
+```
 ### Criar o arquivo Procfile para a Heroku saber o que fazer
+```console
 touch Procfile
-
+```
 ### Incluir a linha abaixo no arquivo Procfile
 web: gunicorn app:app
 
 ### Congelar as dependências e salvar no arquivo requirements.txt
+```console
 pip3 freeze > requirements.txt
-
-### Rodar em ambiente de desenvlvimento
-
+```
+### Rodar em ambiente de desenvolvimento
+```console
+python app.py
+```
 ## Ambiente de homologação
 ### Conectar o usuário à Heroku. Abre uma aba no navegador para usuário e senha na Heroku.
+```console
 heroku login
-
+```
 ### Criar o app na Heroku
+```console
 heroku create transparenciacovid9
-
+```
 ### Configurar o ambiente para Python com o buildpack da Heroku
+```console
 heroku buildpacks:set heroku/python
 
 ### Verificar se está apontando para transparenciacovid19
+```console
 heroku remote -v
-
+```
 Caso não esteja, rodar o comando abaixo:
-
+```console
 heroku git:remote -a transparenciacovid19
-
+```
 ### Operações para subir o projeto no Github e rodar na Heroku
+```console
 git init
-
 git add .
-
 git commit -m “Texto da versão”
-
 git push heroku master
+```
